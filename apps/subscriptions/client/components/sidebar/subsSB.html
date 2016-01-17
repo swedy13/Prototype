@@ -1,0 +1,45 @@
+<template name="subsSB">
+	<div class="sb-panel">
+
+		<ul class="header">
+			<li class="icon">
+				<img class="activity" alt="" src=""/>
+			</li>
+			<li class="icon">
+				<img class="integrations" alt="" src=""/>
+			</li>
+			<li class="icon">
+				<img class="settings" alt="" src=""/>
+			</li>
+		</ul>
+
+		<div class="content">
+			{{>subsSBActivity}}
+			{{>subsSBIntegrations}}
+			{{>subsSBSettings}}
+		</div>
+		
+	</div>	
+</template>
+
+
+<!-- Activity Notifications -->
+<template name="subsSBActivity">
+	<div class="activity"></div>
+</template>
+
+
+<!-- API Integrations -->
+<template name="subsSBIntegrations">
+	<div class="integrations"></div>
+	<!-- Integrations -->
+</template>
+
+
+<!-- Subscriptions Settings -->
+<template name="subsSBSettings">
+	<div class="settings"></div>
+	<!-- Privacy Settings
+			 Blocked Users
+			 View As -->
+</template>

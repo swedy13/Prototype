@@ -1,0 +1,28 @@
+<template name="grid">
+
+	<footer>
+		{{>footer}}		
+	</footer>
+	
+	<nav>
+		{{>sidebar}}		
+	</nav>
+
+	<header>
+		{{>header}}		
+	</header>
+	
+	<main>
+		<div class="left-rail">
+			{{>subsFilters}}
+		</div>
+		<div class="content">
+			{{>subsFeed}}
+		</div>
+		<div class="right-rail"></div>
+		<!-- <div class="sidebar">
+				 {{>subsSB}}
+				 </div> -->
+	</main>
+
+</template>
