@@ -1,0 +1,29 @@
+// ---- TABS ---- //
+.tab
+  height 25px
+  width auto
+  display flex
+  align-items center
+  background-color #d5d5d5
+  border 1px solid #ccc
+  color #666
+  transition .1s ease-in-out
+  white-space nowrap
+  cursor pointer
+
+  &.icon
+    height 37px
+    justify-content center
+    padding 0 12px
+
+    i
+      margin-right 5px
+      font-size 1.1em
+      color #666
+
+      p, i
+        color #333
+
+  &:hover, &.active
+    background-color transparent
+    border-bottom none

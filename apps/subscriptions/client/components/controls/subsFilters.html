@@ -1,49 +1,52 @@
 <template name="subsFilters">
-	<ul class="subs-filters">
-		
-		<!-- <div class="head">
-				 <div class="icon">
-				 <i class="fa fa-rss"></i>
-				 </div>
-				 <div class="title">
-				 <h2>Subscriptions</h2>		
-				 </div>			
-				 </div> -->
+	<ul class="vertical right">
+
+		<li>
+			<button class="huge raised blue">
+				<i class="fa fa-clock-o fa-fw"></i>
+				<p>Button</p>
+			</button>
+		</li>
+		<li class="sub-menu">
+			<div class="title">Title'</div>
+			<li>
+				<button class="raised blue">
+					<i class="fa fa-clock-o fa-fw"></i>
+					<p>Button</p>
+				</button>
+			</li>						
+		</li>
 
 		<li class="by-type">
 			<p>TYPE</p>
 			<div>
-				<a class="tag">
+				<a class="tag new">
 					<i class="fa fa-clock-o fa-fw"></i>
 					<p>Newest</p>					
 				</a>
-				<a class="tag">
+				<a class="tag popular">
 					<i class="fa fa-rocket fa-fw"></i>
 					<p>Popular</p>
 				</a>
-				<!-- <a class="tag">
-						 <i class="fa fa-flag fa-fw"></i>
-						 <p>Recommended</p>
-						 </a> -->
 			</div>
 		</li>
 
 		<li class="by-content">
 			<p>CONTENT</p>
 			<div>
-				<a class="tag">
+				<a class="tag text">
 					<i class="fa fa-file-text-o fa-fw"></i>
 					<p>Text</p>
 				</a>
-				<a class="tag">
+				<a class="tag image">
 					<i class="fa fa-picture-o fa-fw"></i>
 					<p>Images</p>
 				</a>
-				<a class="tag">
+				<a class="tag gif">
 					<i class="fa fa-file-video-o fa-fw"></i>
 					<p>Gifs</p>
 				</a>
-				<a class="tag">
+				<a class="tag video">
 					<i class="fa fa-film fa-fw"></i>
 					<p>Videos</p>
 				</a>
@@ -53,17 +56,21 @@
 		<li class="by-location">
 			<p>LOCATION</p>
 			<div>
-				<a class="tag">
+				<a class="tag map-marker">
 					<i class="fa fa-map-marker fa-fw"></i>
 					<p>My Location</p>
 				</a>
-				<a class="tag">
+				<a class="tag search">
 					<i class="fa fa-search fa-fw"></i>
 					<p>Search</p>
 				</a>
-				<div class="input">
+				<div class="tag input">
 					<i class="fa fa-search fa-fw"></i>
 					<input class="input invisible" name="find-location" type="text" placeholder="Try a zip code...">
+				</div>
+				<div class="tag search">
+					<i class="fa fa-search fa-fw"></i>
+					<input class="invisible search" name="find-location" type="text" placeholder="Try a zip code...">
 				</div>
 			</div>
 		</li>
@@ -71,20 +78,20 @@
 		<li class="by-source">
 			<p>SOURCE</p>
 			<div>
-				<a class="tag">
+				<a class="tag facebook">
 					<i class="fa fa-facebook fa-fw"></i>
 					<p>Facebook</p>
 				</a>
-				<a class="tag">
+				<a class="tag twitter">
 					<i class="fa fa-twitter fa-fw"></i>
 					<p>Twitter</p>
 				</a>
-				<a class="tag">
+				<a class="tag clock-o">
 					<i class="fa fa-clock-o fa-fw"></i>
 					<p>Mythros</p>
 				</a>
-				<a class="tag">
-					<i class="fa fa-reddit fa-fw"></i>
+				<a class="tag reddit">
+					<i class="fa fa-reddit-alien fa-fw"></i>
 					<p>Reddit</p>
 				</a>
 			</div>

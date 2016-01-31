@@ -1,0 +1,35 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- SOCIAL MEDIA BUTTONS ---- //
+button
+  &.ghost, &.light-gray
+
+    // ---- SOCIAL STYLES ---- //
+    &.facebook, &.google, &.reddit, &.twitter
+    
+      // Default Style
+      &:hover, &.active
+        color lightest-text
+        text-shadow 1px 1px 1px darkest-text
+
+
+    // ---- SOCIAL COLORS ---- //
+    // Facebook
+    &.facebook
+      &:hover, &.active
+        background-color facebook
+
+    // Google
+    &.google
+      &:hover, &.active
+        background-color google
+          
+    // Reddit
+    &.reddit
+      &:hover, &.active
+        background-color reddit
+
+    // Twitter
+    &.twitter
+      &:hover, &.active
+        background-color twitter

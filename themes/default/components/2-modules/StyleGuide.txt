@@ -1,0 +1,45 @@
+CSS FORMATTING GUIDELINES
+-------------------------------------------
+General overview goes here...
+
+
+
+EXAMPLE
+-------------------------------------------
+*Note: This is shown using Stylus syntax...
+
+// Selector
+div
+
+	// Display
+	display flex
+	align-items center
+
+	// Position
+	position relative
+	top 0
+
+	// Size
+	height 50px
+	padding 10px
+	overflow hidden
+	border 1px solid
+
+	// Styling
+	border-radius 5px
+	background none
+	
+	// Fonts
+	font inherit
+	color inherit
+	letter-spacing inherit
+
+	// Interactions
+	cursor pointer
+	transition 1s ease
+
+	// Sub-Selector
+	&.class
+	&:hover
+	p
+

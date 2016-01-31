@@ -1,0 +1,53 @@
+nav
+  #sidebar-menu
+    z-index 350
+    width 50px
+    position absolute
+    top 0
+    bottom 0
+    right 0
+    background-color #999
+    // border-left 1px solid #888
+    box-shadow -2px 0 4px #777
+    
+    .top
+      position absolute
+      top 3px
+
+    .bottom
+      position absolute
+      bottom 0
+
+  #sidebar-panel
+    z-index 301
+    width 300px
+    position absolute
+    top 0
+    bottom 0
+    right 50px
+    
+    .panel
+      height 100%
+      width 100%
+      background-color #e7e7e7
+      // border-left 1px solid red
+      box-shadow -2px 0 7px #999, -2px 0 15px 2px #aaa
+
+      &.active
+        display flex
+
+      .header
+        display flex
+        align-items center
+        position absolute
+        top 2px
+        left 0
+        right 0
+
+      .content
+        position absolute
+        top 41px
+        bottom 0
+        left 0
+        right 0
+        padding 8px

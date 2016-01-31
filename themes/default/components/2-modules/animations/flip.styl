@@ -1,0 +1,45 @@
+.flip-container,
+.front,
+.back
+  height 27px
+  width 300px
+
+.flip-container
+  perspective 1000
+
+  &.vertical
+    position relative
+
+    &:hover
+      .flipper
+        transform rotateX(-180deg)
+
+    .flipper
+      transform-origin 100% 13.5px
+
+  &:hover
+    .flipper
+      transform rotateY(180deg)
+
+  .flipper
+    position relative
+    transition 0.6s
+    transform-style preserve-3d
+
+    .front,
+    .back
+      position absolute
+      top 0
+      left 0
+      backface-visibility hidden
+
+    .front
+      z-index 2
+      justify-content center
+      transform rotateY(0deg)
+
+    .back
+      transform rotateY(180deg)
+
+      &.vertical
+        transform rotateX(180deg)

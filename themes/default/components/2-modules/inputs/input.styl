@@ -1,0 +1,306 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- INPUTS ---- //
+input, textarea
+  height 28.5px
+  padding 0px 7px
+  outline none
+  border 1px solid light-gray
+  border-radius 3px
+  font-family inherit
+  font-size 1.05em
+  font-weight 400
+  color darkest-text
+  placeholder-color(gray)
+
+// Raised Inputs
+input, textarea, .input-group
+  &.raised
+    box-shadow z1
+
+    &:hover
+      box-shadow z2
+
+    &.sliver, &.red-sliver, &.yellow-sliver, &.green-sliver, &.blue-sliver
+      box-shadow z1
+  
+  
+// ---- INPUT GROUPS ---- //
+.input-group
+  display flex
+  align-items center
+
+  // Icons
+  &.icon
+    span
+      display flex
+      align-items center
+      height 28.5px
+      padding 0px 7px
+      border 1px solid light-gray
+      background-color lightest-gray
+
+      i, p
+        color dark-text
+
+
+  // ---- INPUT GROUP POSITIONNING ---- //
+  &.left
+    span
+      border-right none
+      border-radius 3px 0 0 3px
+
+    input
+      border-radius 0 3px 3px 0
+      
+    &.inline
+      input
+        border-left none
+      
+  &.right
+    span
+      border-left none
+      border-radius 0 3px 3px 0
+
+    input
+      border-radius 3px 0 0 3px
+
+    &.inline
+      input
+        padding-right 0px
+        border-right none
+        
+
+  // ---- INPUT SIZES ---- //
+input, textarea, .input-group
+
+  // Tiny Inputs
+  &.tiny
+    height 19px
+    font-size .8em
+    
+    input, span
+      height 19px
+      padding 0px 3px
+      
+  // Small Inputs
+  &.small
+    height 26px
+    font-size .9em
+    
+    input, span
+      height 26px
+      padding 0px 5px
+  
+      i
+        font-size .9em
+        
+  // Large Inputs
+  &.large
+    height 37.25px
+    font-size 1.1em
+    
+    input, span
+      height 37.25px
+      padding 0px 12px
+      
+      i
+        font-size 1.1em
+        
+  // Huge Inputs
+  &.huge
+    height 44px
+    font-size 1.2em
+    
+    input, span
+      height 44px
+      padding 0px 15px
+
+      i
+        font-size 1.2em
+  
+
+  // ---- INPUT COLORS ---- //
+  // Shared Styles
+  &.ghost, &.light-gray, &.gray, &.red, &.yellow, &.green, &.blue
+    &:hover, &.active
+      input, textarea
+        background-color white
+
+  &.light-gray, &.gray, &.red, &.yellow, &.green, &.blue        
+    input
+      background-color white
+
+  &.red, &.green, &.blue
+    span
+      i
+        color white
+
+  // Ghost Inputs
+  &.ghost
+    input
+      background-color transparent
+
+    span
+      background-color lightest-gray
+
+    &.inline
+      span
+        background-color transparent
+        
+      &:hover, &.active
+        span
+          background-color white
+
+  // Light Gray Inputs
+  &.light-gray
+    &:hover, &.active
+      span
+        background-color lighter-gray
+        
+    &.inline
+      input
+        background-color lightest-gray
+        
+      &:hover, &.active
+        input
+          background-color white
+
+        span
+          background-color lightest-gray
+
+  // Gray Inputs      
+  &.gray
+    span
+      background-color light-gray
+
+      i
+        color darker-text
+
+    &:hover, &.active
+      span
+        background-color gray
+
+        i
+          color darkest-text
+
+    &.inline
+      span
+        background-color lightest-gray
+        
+      &:hover, &.active
+        span
+          background-color light-gray
+
+  // Red Inputs
+  &.red
+    span
+      background-color red
+
+    &:hover, &.active
+      span
+        background-color dark-red
+
+  // Yellow Inputs
+  &.yellow
+    span
+      background-color yellow
+
+      i
+        color darker-text
+    
+    &:hover, &.active
+      span
+        background-color dark-yellow
+
+  // Green Inputs
+  &.green
+    span
+      background-color green
+
+    &:hover, &.active
+      span
+        background-color dark-green
+
+  // Blue Inputs
+  &.blue
+    span
+      background-color blue
+
+    &:hover, &.active
+      span
+        background-color dark-blue
+
+
+
+
+
+
+
+
+
+
+
+// // ---- SEARCH ---- //
+// .tag
+//   &.input
+//     height 25px
+//     padding 0
+
+//     i
+//       margin 0
+
+//     input
+//       width 100px
+
+//     &:hover
+//       background-color #fff
+
+// input
+// .input
+//   display flex
+//   align-items center
+//   position relative
+//   height 23px
+//   padding 4px 3px
+//   background-color #fff
+//   border 1px solid #d5d5d5
+//   border-radius 3px
+//   white-space nowrap
+//   cursor pointer
+//   transition .2s
+
+//   +placeholder()
+//     color #999
+
+//   i
+//     height 25px
+//     display flex
+//     align-items center
+//     justify-content center
+//     margin-left 2px
+//     margin-right 10px
+//     font-size 1.2em
+//     color #aaa
+
+//   &:hover, &:focus
+//     border 1px solid transparent
+//     box-shadow 0 0 2px 1px blue
+
+//     i
+//       color #777
+//       transition .2s
+
+//   .invisible
+//     padding 0
+//     margin 0
+//     background none
+//     border none
+//     box-shadow none
+//     cursor pointer
+    
+//     &:hover, &:focus, &:active
+//       background none
+//       border none
+//       box-shadow none
+//       outline none

@@ -1,0 +1,28 @@
+<template name="sidebar">
+	<div id="sidebar-menu">
+		<div class="top">
+			<a class="insights icon button">
+				<i class="fa fa-2x fa-flag fa-fw"></i>
+			</a>	
+			<a class="subscriptions icon button">
+				<i class="fa fa-2x fa-rss fa-fw"></i>
+			</a>
+			<a class="huddles icon button">
+				<i class="fa fa-2x fa-envelope fa-fw"></i>
+			</a>
+			{{>profSB}}
+		</div>
+		<div class="bottom">
+			<a class="settings icon button">
+				<i class="fa fa-2x fa-info fa-fw"></i>
+			</a>	
+		</div>		
+	</div>
+	<div id="sidebar-panel">
+		<div class="insights panel"></div>
+		<div class="subscriptions panel"></div>
+		<div class="huddles panel"></div>
+		{{>profPanel}}
+		<div class="settings panel"></div>
+	</div>
+</template>

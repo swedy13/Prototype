@@ -1,28 +1,25 @@
 <template name="grid">
 
-	<footer>
-		{{>footer}}		
-	</footer>
-	
-	<nav>
-		{{>sidebar}}		
-	</nav>
-
 	<header>
 		{{>header}}		
 	</header>
+
+	<nav>
+		{{>sidebar}}		
+	</nav>
 	
 	<main>
-		<div class="left-rail">
+		<div id="left-rail">
 			{{>subsFilters}}
 		</div>
-		<div class="content">
+		<div id="center-column">
 			{{>subsFeed}}
 		</div>
-		<div class="right-rail"></div>
-		<!-- <div class="sidebar">
-				 {{>subsSB}}
-				 </div> -->
+		<div id="right-rail"></div>
 	</main>
+
+	<footer>
+		{{>footer}}		
+	</footer>
 
 </template>

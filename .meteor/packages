@@ -10,7 +10,6 @@ tracker                 # Meteor's client-side reactive programming library
 
 # ACCOUNTS
 digilord:faker
-accounts-ui
 accounts-password
 
 
@@ -18,8 +17,7 @@ accounts-password
 standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
-
-# underscore
+underscore
 # meteorhacks:npm
 # npm-container
 # mizzao:jquery-ui
@@ -29,12 +27,17 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 # UI
 mquandalle:stylus
 fortawesome:fontawesome
-# semantic:ui
-# flemay:less-autoprefixer
 
 
 # HELPERS
+copleykj:jquery-autosize
 # copleykj:livestamp
 # zimme:collection-timestampable
-
-react
+accounts-twitter
+accounts-base
+useraccounts:core
+useraccounts:unstyled
+accounts-facebook
+accounts-google
+service-configuration
+accounts-ui

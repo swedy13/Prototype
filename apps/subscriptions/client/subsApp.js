@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 
 	// SUBSCRIPTIONS
 	Meteor.subscribe('posts');
-	
+
 
 	// HELPERS
 	// Posts Helpers
@@ -34,7 +34,7 @@ if (Meteor.isClient) {
 	});
 
 	
-	// EVENTS
+	// EVENTS	
 	// Posts Events
 	Template.subsPosts.events({
 		'submit .new-post': function(e) {

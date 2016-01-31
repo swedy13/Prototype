@@ -1,0 +1,214 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- BUTTON SLIVERS ---- //
+button
+
+  // ---- SLIVER BACKGROUNDS ---- //
+  // Ghost Sliver Backgrounds
+  &.ghost
+    &.sliver, &.red-sliver, &.yellow-sliver, &.green-sliver, &.blue-sliver
+      &:hover, &.active
+        background-color transparent
+        
+  // Light Gray Sliver Backgrounds
+  &.light-gray
+    &.sliver, &.red-sliver, &.yellow-sliver, &.green-sliver, &.blue-sliver
+      &:hover, &.active
+        background-color lightest-gray
+
+                        
+  // ---- SLIVER HIGHLIGHTS ---- //
+  // Default Sliver
+  &.sliver
+    &:hover, &.active
+      box-shadow inset 0 2px 0 dark-gray
+      
+      &.raised
+        box-shadow z1, inset 0 2px 0 dark-gray
+      
+      &.circles
+        box-shadow inset 0 3px 0 dark-gray
+            
+        &.raised
+          box-shadow z1, inset 0 3px 0 dark-gray
+        
+  // Red Slivers
+  &.red-sliver
+    &:hover, &.active
+      box-shadow inset 0 2px 0 red
+      
+      &.raised
+        box-shadow z1, inset 0 2px 0 red
+      
+      &.circles
+        box-shadow inset 0 3px 0 red
+            
+        &.raised
+          box-shadow z1, inset 0 3px 0 red
+        
+  // Yellow Sliver
+  &.yellow-sliver
+    &:hover, &.active
+      box-shadow inset 0 2px 0 yellow
+      
+      &.raised
+        box-shadow z1, inset 0 2px 0 yellow
+      
+      &.circles
+        box-shadow inset 0 3px 0 yellow
+            
+        &.raised
+          box-shadow z1, inset 0 3px 0 yellow
+
+  // Green Sliver
+  &.green-sliver
+    &:hover, &.active
+      box-shadow inset 0 2px 0 green
+      
+      &.raised
+        box-shadow z1, inset 0 2px 0 green
+      
+      &.circles
+        box-shadow inset 0 3px 0 green
+            
+        &.raised
+          box-shadow z1, inset 0 3px 0 green
+        
+  // Blue Sliver
+  &.blue-sliver
+    &:hover, &.active
+      box-shadow inset 0 2px 0 blue
+      
+      &.raised
+        box-shadow z1, inset 0 2px 0 blue
+      
+      &.circles
+        box-shadow inset 0 3px 0 blue
+            
+        &.raised
+          box-shadow z1, inset 0 3px 0 blue
+
+
+
+// ---- SOCIAL MEDIA SLIVERS ---- //
+button
+
+  // ---- SLIVER BACKGROUNDS ---- //
+  // Ghost Sliver Backgrounds
+  &.ghost
+    &.sliver
+      &.facebook, &.google, &.reddit, &.twitter
+        &:hover, &.active
+          background-color transparent
+
+        &:hover
+          color dark-text
+          text-shadow none
+        
+  // Light Gray Sliver Backgrounds
+  &.light-gray
+    &.sliver
+      &.facebook, &.google, &.reddit, &.twitter
+        &:hover, &.active
+          background-color lightest-gray
+
+        &:hover
+          color dark-text
+          text-shadow none
+
+
+  // ---- SLIVER COLORS ---- //
+  &.ghost, &.light-gray
+    &.sliver
+
+      // Facebook Sliver
+      &.facebook
+        &:hover
+          box-shadow inset 0 2px 0 facebook
+      
+          &.raised
+            box-shadow z1, inset 0 2px 0 facebook
+      
+          &.circles
+            box-shadow inset 0 3px 0 facebook
+            
+            &.raised
+              box-shadow z1, inset 0 3px 0 facebook
+
+        &.active
+          background-color facebook
+          box-shadow none
+          color lightest-text
+          text-shadow 1px 1px 1px darkest-text
+
+          &.raised
+            box-shadow z1
+
+      // Google Sliver
+      &.google
+        &:hover
+          box-shadow inset 0 2px 0 google
+      
+          &.raised
+            box-shadow z1, inset 0 2px 0 google
+      
+          &.circles
+            box-shadow inset 0 3px 0 google
+            
+            &.raised
+              box-shadow z1, inset 0 3px 0 google
+
+        &.active
+          background-color google
+          box-shadow none
+          color lightest-text
+          text-shadow 1px 1px 1px darkest-text
+
+          &.raised
+            box-shadow z1
+
+      // Reddit Sliver
+      &.reddit
+        &:hover
+          box-shadow inset 0 2px 0 reddit
+      
+          &.raised
+            box-shadow z1, inset 0 2px 0 reddit
+      
+          &.circles
+            box-shadow inset 0 3px 0 reddit
+            
+            &.raised
+              box-shadow z1, inset 0 3px 0 reddit
+
+        &.active
+          background-color reddit
+          box-shadow none
+          color lightest-text
+          text-shadow 1px 1px 1px darkest-text
+
+          &.raised
+            box-shadow z1
+
+      // Twitter Sliver
+      &.twitter
+        &:hover
+          box-shadow inset 0 2px 0 twitter
+      
+          &.raised
+            box-shadow z1, inset 0 2px 0 twitter
+      
+          &.circles
+            box-shadow inset 0 3px 0 twitter
+            
+            &.raised
+              box-shadow z1, inset 0 3px 0 twitter
+
+        &.active
+          background-color twitter
+          box-shadow none
+          color lightest-text
+          text-shadow 1px 1px 1px darkest-text
+
+          &.raised
+            box-shadow z1

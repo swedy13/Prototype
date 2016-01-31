@@ -1,0 +1,80 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- MENUS ---- //
+ol, ul
+  display flex
+  margin 0
+  padding 0
+  user-select none
+
+  li
+    display block
+
+  
+  // ---- MENU STYLES ---- //
+  // Horizontal Menus
+  &.horizontal
+    flex-direction row
+    align-items center
+  
+    // &.full
+    //   height 100%
+    //   width 100%
+    //   right 0
+    //   left 0
+  
+    //   li
+    //     width 100%
+    //     margin 0
+  
+    // &.center
+    //   justify-content space-around
+  
+    // &.left
+    //   li
+    //     margin-right 5px
+  
+    // &.right
+    //   li
+    //     margin-left 5px
+  
+    // &.dark
+    //   background-color 
+
+
+  // Vertical Menus
+  &.vertical
+    flex-direction column
+    justify-content center
+  
+    li
+      margin-bottom 5px
+  
+    // &.left
+    //   float left
+      
+    // &.right
+    //   float right
+
+
+  // ---- MENU ALIGNMENT ---- //
+  &.full
+    height 100%
+    width 100%
+    right 0
+    left 0
+  
+    li
+      width 100%
+      margin 0
+  
+  &.center
+    justify-content space-around
+  
+  &.left
+    li
+      margin-right 5px
+  
+  &.right
+    li
+      margin-left 5px

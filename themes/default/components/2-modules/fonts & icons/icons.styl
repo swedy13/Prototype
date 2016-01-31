@@ -1,0 +1,390 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- ICONS ---- //
+img.icon, i
+  font-size 1em
+  color inherit
+  margin 0 2px
+
+
+  // ---- ICON SIZES ---- //
+  &.tiny
+    font-size 0.8em
+
+  &.small
+    font-size 0.9em
+
+  &.large
+    font-size 1.1em
+
+  &.larger
+    font-size 1.2em
+
+  &.largest
+    font-size 1.3em
+
+  &.huge
+    font-size 1.4em
+  
+  &.huge
+    font-size 1.5em
+
+  &.huge
+    font-size 1.6em
+
+    
+  // ---- ICON COLORS ---- //
+  &.white
+    color white
+
+    &.raised
+      text-shadow 1px 1px 1px darkest-text
+    
+  &.light-gray
+    color light-gray
+
+    &:hover, &.active
+      color gray
+    
+  &.gray
+    color gray
+
+    &:hover, &.active
+      color dark-gray
+
+  &.dark-gray
+    color dark-gray
+
+    &:hover, &.active
+      color darker-gray
+        
+  &.red
+    color red
+    
+    &:hover, &.active
+      color dark-red
+    
+  &.yellow
+    color yellow
+    
+    &:hover, &.active
+      color dark-yellow
+    
+  &.green
+    color green
+    
+    &:hover, &.active
+      color dark-green
+    
+  &.blue
+    color blue
+
+    &:hover, &.active
+      color dark-blue
+
+  &.black
+    color black
+
+
+  // ---- ICON HOVERS ---- //
+  &.white, &.light-gray, &.gray, &.dark-gray, &.red, &.yellow, &.green, &.blue, &.black
+    &:hover, &.active
+    
+      &.white-bg
+        color white
+      
+      &.light-gray-bg
+        color light-gray
+
+      &.gray-bg
+        color gray
+
+      &.red-bg
+        color red
+
+      &.yellow-bg
+        color yellow
+
+      &.green-bg
+        color green
+
+      &.blue-bg
+        color blue
+
+      &.black-bg
+        color black
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Social Media
+// facebook = #3b5998
+// reddit   = #ff4500
+// twitter  = #55acee
+
+// // Generic Icons
+// camera     = green
+// link       = blue
+// map-marker = red
+// privacy    = gray
+// text       = gray
+// image      = green
+// gif        = red
+// video      = blue
+// comment    = blue
+// like       = blue
+// share      = blue
+
+
+// .circle
+//   &.focused
+//     border 1px solid transparent
+
+//     i
+//       color white
+//       text-shadow 1px 1px 1px #333
+
+//   // Social Media
+//   &.facebook
+//     &:hover
+//       box-shadow 0 -2px 0 1px facebook
+
+//     &.focused
+//       background-color facebook
+
+//   &.reddit
+//     &:hover
+//       box-shadow 0 -2px 0 1px reddit
+
+//     &.focused
+//       background-color reddit
+
+//   &.twitter
+//     &:hover
+//       box-shadow 0 -2px 0 1px twitter
+
+//     &.focused
+//       background-color twitter
+
+//   // Generic Icons    
+//   &.camera
+//     &:hover
+//       box-shadow 0 -2px 0 1px camera
+
+//     &.focused
+//       background-color white
+//       box-shadow 0 0 2px #777
+
+//       &:hover
+//         box-shadow 0 -2px 0 1px camera
+      
+//       i
+//         text-shadow none
+//         color camera
+
+//   &.link
+//     &:hover
+//       box-shadow 0 -2px 0 1px link
+
+//     &.focused
+//       background-color white
+//       box-shadow 0 0 2px #777
+
+//       &:hover
+//         box-shadow 0 -2px 0 1px link
+      
+//       i
+//         text-shadow none
+//         color link
+
+//   &.map-marker
+//     &:hover
+//       box-shadow 0 -2px 0 1px map-marker
+
+//     &.focused
+//       background-color white
+//       box-shadow 0 0 2px #777
+
+//       &:hover
+//         box-shadow 0 -2px 0 1px map-marker
+      
+//       i
+//         text-shadow none
+//         color map-marker
+
+//   &.privacy
+//     &:hover
+//       box-shadow 0 -2px 0 1px privacy
+
+//     &.focused
+//       background-color privacy
+
+//   &.comment
+//     &:hover
+//       box-shadow 0 -2px 0 1px comment
+
+//     &.focused
+//       background-color comment
+
+//   &.like
+//     &:hover
+//       box-shadow 0 -2px 0 1px like
+
+//     &.focused
+//       background-color like
+
+//   &.share
+//     &:hover
+//       box-shadow 0 -2px 0 1px share
+
+//     &.focused
+//       background-color share
+      
+
+// .icon
+//   // Social Media
+//   &.facebook
+//     i
+//       color facebook
+      
+//   &.reddit
+//     i
+//       color reddit
+      
+//   &.twitter
+//     i
+//       color twitter
+
+//   // Generic Icons
+//   &.camera
+//     i
+//       color camera
+
+//   &.link
+//     i
+//       color link
+
+//   &.map-marker
+//     i
+//       color map-marker
+
+//   &.privacy
+//     i
+//       color privacy
+
+//   &.text
+//     i
+//       color text
+
+//   &.image
+//     i
+//       color image
+
+//   &.gif
+//     i
+//       color gif
+
+//   &.video
+//     i
+//       color video
+
+
+
+// .tag
+//   // Social Media
+//   &.facebook
+//     i
+//       &.icon
+//         &.dark
+//           background-color facebook
+      
+//   &.reddit
+//     i
+//       &.icon
+//         &.dark
+//           background-color reddit
+      
+//   &.twitter
+//     i
+//       &.icon
+//         &.dark
+//           background-color twitter
+
+//   // Generic Icons
+//   &.camera
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color camera
+
+//   &.link
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color link
+
+//   &.map-marker
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color map-marker
+
+//   &.privacy
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color privacy
+
+//   &.text
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color text
+
+//   &.image
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color image
+
+//   &.gif
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color gif
+
+//   &.video
+//     i
+//       &.icon
+//         &.dark
+//           background-color white
+//           box-shadow 0 0 1px #888
+//           color video

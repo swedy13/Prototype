@@ -1,0 +1,68 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- EDITORS ---- //
+.editor
+
+  // ---- EDITOR HEADER ---- //
+
+  
+  // ---- EDITOR CONTENT ---- //
+  .content
+    display flex
+    justify-content space-between
+    cursor text
+
+  // Content Sidebar
+  &.left
+    flex-direction row-reverse
+    
+    .sidebar
+      margin-right 5px
+      
+  &.right
+    flex-direction row
+  
+    .sidebar
+      margin-left 5px
+
+  // Content Textarea
+  textarea
+    width 100%
+    margin-bottom 8px
+    padding 0px
+    border none
+    resize none
+
+    
+  // ---- EDITOR FOOTER ---- //
+  .footer
+    display flex
+    align-items center
+    justify-content space-between
+    margin -8px
+    margin-top 0px
+    padding 8px
+    border-radius 0 0 3px 3px
+
+
+    // ---- FOOTER COLORS ---- //
+    &.ghost
+      background-color transparent
+    
+    &.light-gray
+      background-color lightest-gray
+    
+    &.gray
+      background-color light-gray
+    
+    &.red
+      background-color red
+    
+    &.yellow
+      background-color yellow
+    
+    &.green
+      background-color green
+    
+    &.blue
+      background-color blue
