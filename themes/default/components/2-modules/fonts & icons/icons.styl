@@ -1,10 +1,17 @@
 @import 'themes/default/colors.import.styl'
 
 // ---- ICONS ---- //
-img.icon, i
-  font-size 1em
-  color inherit
-  margin 0 2px
+span.icon
+  img, i
+    font-size 1em
+    color inherit
+    margin 0 2px
+    cursor pointer
+    user-select none
+
+  p
+    cursor pointer
+    user-select none
 
 
   // ---- ICON SIZES ---- //
@@ -26,11 +33,17 @@ img.icon, i
   &.huge
     font-size 1.4em
   
-  &.huge
+  &.huger
     font-size 1.5em
 
-  &.huge
+  &.hugest
     font-size 1.6em
+
+  &.thin
+    font-weight 300
+
+  &.thick
+    font-weight 500
 
     
   // ---- ICON COLORS ---- //

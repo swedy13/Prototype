@@ -1,13 +1,5 @@
 if (Meteor.isClient) {
-
-	Template.subsFilters.helpers({
-	});
-	
-
-	Template.subsFilters.events({
-	});
-
-
+  
 	Template.subsFilters.onRendered(function() {
 		(function highlightButton() {
 			$('.tag').click(function() {
@@ -33,28 +25,28 @@ if (Meteor.isClient) {
 			 });
 			 })(); */
 
-		(function toggleLocation() {
-			var filters		= $('.subs-filters');
-			var searchBtn	= filters.find('.tag.search');
-			var searchFld = filters.find('.tag.input');
+		/* (function toggleLocation() {
+			 var filters		= $('.subs-filters');
+			 var searchBtn	= filters.find('.tag.search');
+			 var searchFld = filters.find('.tag.input');
 
-			searchBtn.click(function() {
-				searchFld
-					.show()
-					.css('display', 'flex');
-				searchFld.find('i').css('color', '#0074d9');
-				searchFld.find('input').focus();
-				searchBtn.hide();
-			});
+			 searchBtn.click(function() {
+			 searchFld
+			 .show()
+			 .css('display', 'flex');
+			 searchFld.find('i').css('color', '#0074d9');
+			 searchFld.find('input').focus();
+			 searchBtn.hide();
+			 });
 
-			searchFld.focusout(function() {
-				if (searchFld.find('input').val() == '') {
-					searchBtn
-						.show()
-						.find('i').removeClass('icon dark');
-					searchFld.hide();					
-				}
-			});
-		})();
+			 searchFld.focusout(function() {
+			 if (searchFld.find('input').val() == '') {
+			 searchBtn
+			 .show()
+			 .find('i').removeClass('icon dark');
+			 searchFld.hide();					
+			 }
+			 });
+			 })(); */
 	});
 }

@@ -12,6 +12,20 @@ button
         color lightest-text
         text-shadow 1px 1px 1px darkest-text
 
+      // Tag Style
+      &.tags
+        &:hover, &.active
+          color darker-text
+          text-shadow none
+
+        &.active
+          background-color transparent
+          border 1px solid transparent
+          
+          i
+            color lightest-text
+            text-shadow 1px 1px 1px darkest-text
+
 
     // ---- SOCIAL COLORS ---- //
     // Facebook
@@ -19,17 +33,37 @@ button
       &:hover, &.active
         background-color facebook
 
+        &.tags
+          &.active
+            span
+              background-color facebook
+
     // Google
     &.google
       &:hover, &.active
         background-color google
           
+        &.tags
+          &.active
+            span
+              background-color google
+            
     // Reddit
     &.reddit
       &:hover, &.active
         background-color reddit
 
+        &.tags
+          &.active
+            span
+              background-color reddit
+            
     // Twitter
     &.twitter
       &:hover, &.active
         background-color twitter
+
+        &.tags
+          &.active
+            span
+              background-color twitter

@@ -1,3 +1,5 @@
+@import 'themes/default/colors.import.styl'
+
 // ---- CARD STYLES ---- //
 .card
 
@@ -11,13 +13,6 @@
     .bio
       display flex
       align-items center
-      
-      .avatar
-        height 40px
-        width 40px
-        margin-right 5px
-        border 1px solid gray
-        border-radius 100%
         
       .details
         display flex
@@ -67,4 +62,15 @@
   // Card Footer
   .footer
     display flex
-    align-items center
+    flex-direction column
+
+    .subs-interaction
+      border-top 1px solid disabled-bg-light
+
+    .subs-comment
+      padding 8px
+      margin 0px -8px
+      background-color lightest-gray
+
+      input
+        width 100%

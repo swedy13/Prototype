@@ -1,0 +1,10 @@
+<template name="accounts">
+
+  {{#if currentUser}}
+    {{> inactivate}}
+  <!-- {{> social}} -->
+  {{else}}
+    {{> activate}}
+  {{/if}}
+  
+</template>

@@ -6,11 +6,23 @@ blaze-html-templates    # Compile .html files into Meteor Blaze views
 session                 # Client-side reactive dictionary for your app
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
+autopublish
+insecure
 
 
 # ACCOUNTS
-digilord:faker
+digilord:faker					# Fake user accounts
+accounts-base
 accounts-password
+accounts-ui
+
+# useraccounts:core     # User accounts library
+# useraccounts:unstyled
+# service-configuration
+
+accounts-facebook				# OAuth
+accounts-google
+accounts-twitter
 
 
 # JS
@@ -31,13 +43,5 @@ fortawesome:fontawesome
 
 # HELPERS
 copleykj:jquery-autosize
-# copleykj:livestamp
+copleykj:livestamp
 # zimme:collection-timestampable
-accounts-twitter
-accounts-base
-useraccounts:core
-useraccounts:unstyled
-accounts-facebook
-accounts-google
-service-configuration
-accounts-ui

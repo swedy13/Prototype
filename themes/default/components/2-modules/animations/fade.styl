@@ -1,0 +1,350 @@
+// .fade
+//   transition all .5s ease-in-out
+
+// .in
+//   opacity 0
+
+//   &.fade
+//     &:hover
+//       opacity 1
+
+// .out
+//   opacity 1
+  
+//   &.fade
+//     &:hover
+//       opacity 0
+
+// .up
+//   margin-top 20px
+
+//   &.fade
+//     &:hover
+//       margin-top 0px
+
+// .down
+//   margin-bottom 20px
+
+//   &.fade
+//     &:hover
+//       margin-bottom 0px
+
+
+
+
+// ---- DROP ANIMATIONS ---- //
+.drop-down
+  animation drop .3s linear forwards
+
+.drop-up
+  animation drop .3s linear backwards
+
+@keyframes drop {
+  from {
+    opacity 0
+    transform translateY(-400px)
+  }
+  to {
+    opacity 1
+    transform translateY(0)
+  }
+}
+
+
+// ---- FADING ANIMATIONS ---- //
+.fadeIn
+  animation fade .3s linear forwards
+
+.fade-out
+  animation fade .3s linear backwards
+  
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+
+// ---- REMOVE ---- //
+// First Animation
+li
+  &.removed-item
+    animation removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards
+    /*transform origin is moved to the bottom left corner*/
+    transform-origin 0% 100%
+ 
+@keyframes removed-item-animation {
+  0% {
+    opacity 1
+    transform rotateZ(0)
+  } 
+  100% {
+    opacity 0
+    transform translateY(600px) rotateZ(90deg)
+  }
+}
+
+// Second Animation
+li
+  &.removed-item
+    animation removed-item-animation .6s ease-out forwards
+    transform-origin 50% 50%
+ 
+@keyframes removed-item-animation {
+  0% {
+    opacity 1
+    transform scale(1)
+  }
+  100% {
+    opacity 0
+    transform scale(4)
+  }
+}
+
+// Third Animation
+li
+  &.removed-item
+    animation: removed-item-animation .8s cubic-bezier(.65,-0.02,.72,.29);
+ 
+@keyframes removed-item-animation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-800px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+}
+
+// Fourth Animation
+li
+  &.removed-item
+    animation removed-item-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards
+ 
+@keyframes removed-item-animation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+// Fifth Animation
+li
+  &.removed-item
+    animation removed-item-animation 2s cubic-bezier(.55,-0.04,.91,.94) forwards
+    transform-origin 0% 100%
+
+@keyframes removed-item-animation {
+  0% {
+    opacity: 1;
+    transform: rotateZ(0);
+  }
+  20% {
+    opacity: 1;
+    transform: rotateZ(140deg);
+  }
+  40% {
+    opacity: 1;
+    transform: rotateZ(60deg);
+  }
+  60% {
+    opacity: 1;
+    transform: rotateZ(110deg);
+  }
+}
+
+// Slide & Drop Away
+li
+  &.removed-item
+    animation removed-item-animation 1s linear
+    transform-origin 390px 100%
+ 
+@keyframes removed-item-animation {
+  0% {
+    opacity: 1;
+    transform: translateX(0) rotateZ(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-400px) rotateZ(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(-420px) rotateZ(-30deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-800px) rotateZ(-60deg)  translateY(400px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // ---- RESTORE ---- //
+// // First Animation
+// li
+//   &.restored-item
+//     animation openspace 0.3s ease forwards, restored-item-animation 0.3s 0.3s cubic-bezier(0, 0.8, 0.32, 1.07) forwards
+
+// @keyframes openspace {
+//   to {
+//     height auto
+//   }
+// }
+ 
+// @keyframes restored-item-animation {
+//   0% {
+//     opacity 0
+//     transform translateY(600px) rotateZ(90deg)
+//   }
+//   10% {
+//     opacity 1
+//     transform translateY(600px) rotateZ(90deg)
+//   }
+//   100% {
+//     opacity 1
+//     transform rotateZ(0)
+//   }
+// }
+
+// // Second Animation
+// li
+//   &.restored-item
+//     animation openspace .3s ease forwards, restored-item-animation .3s .3s ease-out forwards
+ 
+// @keyframes openspace {
+//   to {
+//     height: auto;
+//   }
+// }
+ 
+// @keyframes restored-item-animation {
+//   0% {
+//     opacity: 0;
+//     transform: scale(4);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+// }
+
+// // Slide In & Bounce
+// li
+//   &.restored-item
+//     animation openspace .3s ease forwards, restored-item-animation .5s .3s cubic-bezier(.14,.25,.52,1.56) forwards
+ 
+// @keyframes openspace {
+//   to {
+//     height: auto;
+//   }
+// }
+ 
+// @keyframes restored-item-animation {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(300px);
+//   }
+//   70% {
+//     opacity: 1;
+//     transform: translateX(-50px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// // Zoom In & Horizontal Expand
+// li
+//   &.restored-item
+//     animation openspace .3s ease forwards, restored-item-animation .3s .3s cubic-bezier(0,.8,.32,1.07) forwards
+ 
+// @keyframes openspace {
+//   to {
+//     height: auto;
+//   }
+// }
+ 
+// @keyframes restored-item-animation {
+//   from {
+//     opacity: 0;
+//     transform: scale(0);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+// }
+
+// // Fall Down
+// li
+//   &.restored-item
+//     transform translateX(300px)
+//     animation openspace .3s ease forwards, restored-item-animation .3s .3s cubic-bezier(0,.8,.32,1.07) forwards
+ 
+// @keyframes openspace {
+//   to {
+//     height: auto;
+//   }
+// }
+ 
+// @keyframes restored-item-animation {
+//   to {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// // Slide In & Bounce
+// li
+//   &.restored-item
+//     transform translateX(300px)
+//     animation openspace .3s ease forwards, restored-item-animation .5s .3s cubic-bezier(.14,.25,.52,1.56) forwards
+
+// @keyframes openspace {
+//   to {
+//     height: auto;
+//   }
+// }
+ 
+// @keyframes restored-item-animation {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(300px);
+//   }
+//   70% {
+//     opacity: 1;
+//     transform: translateX(-50px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }

@@ -1,25 +1,26 @@
 <template name="grid">
 
 	<header>
-		{{>header}}		
+		{{> header}}		
 	</header>
 
 	<nav>
-		{{>sidebar}}		
+		{{> sidebar}}		
 	</nav>
 	
 	<main>
 		<div id="left-rail">
-			{{>subsFilters}}
+			{{> subsFilters}}
 		</div>
 		<div id="center-column">
-			{{>subsFeed}}
+			{{> subsApp}}
+      <!-- {{> tasks}} -->
 		</div>
 		<div id="right-rail"></div>
 	</main>
 
 	<footer>
-		{{>footer}}		
+		{{> footer}}		
 	</footer>
 
 </template>

@@ -8,7 +8,7 @@ input, textarea
   border 1px solid light-gray
   border-radius 3px
   font-family inherit
-  font-size 1.05em
+  font-size inherit
   font-weight 400
   color darkest-text
   placeholder-color(gray)
@@ -73,6 +73,18 @@ input, textarea, .input-group
 
   // ---- INPUT SIZES ---- //
 input, textarea, .input-group
+
+  // Tag Inputs
+  &.tags
+    span
+      padding 0 4.5px
+
+    i
+      font-size 1.2em
+
+    input
+      width 100%
+    
 
   // Tiny Inputs
   &.tiny

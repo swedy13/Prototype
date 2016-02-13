@@ -1,12 +1,27 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- PAPER ---- //
 .paper
   display flex
   flex-direction column
   height auto
   width calc(100% - 18px)
-  position relative
   padding 8px
-  margin-top 10px
+  position relative
   background-color #fff
-  border 1px solid #e5e5e5
   border-radius 3px
   box-shadow 0 1px 5px #ddd
+
+
+  // ---- PAPER STYLES ---- //
+  &.border
+    border 1px solid #e5e5e5
+
+    &.dark
+      border-color #ddd
+
+    &.darker
+      border-color #d5d5d5
+
+  &.tight
+    padding-bottom 0px
