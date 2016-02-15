@@ -1,0 +1,85 @@
+@import 'themes/default/colors.import.styl'
+
+// ---- FONT ---- //
+html
+  -ms-text-size-adjust 100%
+  -webkit-text-size-adjust 100%
+
+body
+  font-family 'Roboto', sans-serif
+  font-size 14px
+  line-height 1.4em
+  color #151515
+  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
+
+h1
+h2
+h3
+h4
+  font-weight 500
+
+h1
+h2
+h3
+h4
+p
+blockquote
+figure
+  margin 0
+  padding 0
+  user-select text
+
+strong 
+  font-weight bold
+
+a 
+  color inherit
+  outline none
+  transition .15s ease-in-out
+  text-decoration none
+
+
+// ---- FONT SIZES ---- //
+p, a, span
+  &.tiny
+    font-size .8em
+
+  &.semi-tiny
+    font-size .85em
+    
+  &.small
+    font-size .9em
+
+  &.semi-small
+    font-size .95em
+    
+  &.large
+    font-size 1.1em
+    
+  &.huge
+    font-size 1.2em
+
+
+// ---- FONT WEIGHTS ---- //
+p, a, span
+  &.thin
+    font-weight 300
+    
+  &.thick
+    font-weight 500
+
+
+// ---- FONT COLORS ---- //
+p, a, span
+  &.light
+    color light-text
+
+  &.semi-dark
+    color semi-dark-text
+
+  &.dark
+    color dark-text
+
+  &.red
+    color dark-red
