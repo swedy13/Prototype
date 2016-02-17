@@ -1,0 +1,11 @@
+<template name="accountsCheck">
+
+  <ul class="vertical">
+    <li>Meteor ID: {{currentUser._id}}</li>
+    <li>UserName: {{currentUser.profile.name}}</li>
+    <li>Twitter ID: {{currentUser.services.twitter.id}}</li>
+    <li>Twitter Name: {{currentUser.services.twitter.screenName}}</li>
+    <li><img alt="Twitter Profile Image" src="{{currentUser.services.twitter.profile_image_url}}"/></li>
+  </ul>
+  
+</template>

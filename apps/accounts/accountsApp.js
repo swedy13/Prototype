@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
 
-	Template.activate.events({		
+	Template.accountsActivate.events({		
 		'click .register': function(event) {
 			event.preventDefault();
 			var email = $('[name=email]').val();
@@ -34,8 +34,26 @@ if (Meteor.isClient) {
       });
 		}
 	});
+
+  Template.accountsSocial.events({
+    'click [data-action="facebookLogin"]': function(event) {
+      Meteor.loginWithFacebook({}, function(error) {
+        if (error) {
+          throw new Meteor.Error('Facebook login failed');
+        }
+      });
+    },
+
+    'click [data-action="twitterLogin"]': function(event) {
+      Meteor.loginWithTwitter({}, function(error) {
+        if (error) {
+          throw new Meteor.Error(error.reason);
+        }
+      });
+    }
+  });
 	
-  Template.inactivate.events({
+  Template.accountsInactivate.events({
 		'click .logout': function(event) {
 			event.preventDefault();
 			Meteor.logout();

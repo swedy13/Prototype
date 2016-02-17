@@ -16,11 +16,8 @@ accounts-base
 accounts-password
 accounts-ui
 
-# useraccounts:core     # User accounts library
-# useraccounts:unstyled
-# service-configuration
-
-accounts-facebook				# OAuth
+service-configuration   # OAuth
+accounts-facebook
 accounts-google
 accounts-twitter
 

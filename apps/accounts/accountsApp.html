@@ -1,0 +1,10 @@
+<template name="accountsApp">
+
+  {{#if currentUser}}
+    {{> accountsInactivate}}
+    {{> accountsSocial}}
+  {{else}}
+    {{> accountsActivate}}
+  {{/if}}
+  
+</template>

@@ -31,15 +31,18 @@
 		</div>
 		
 		<div class="content">
-			{{>profSettings}}
+			{{> profSettings}}
+      
+      {{#if currentUser}}
+        {{> accountsCheck}}
+      {{/if}}
 		</div>
 	</div>	
 </template>
 
 
 <template name="profSettings">
-	<!-- {{>atForm}} -->
-  {{> accounts}}
+  {{> accountsApp}}
 </template>
 
 
