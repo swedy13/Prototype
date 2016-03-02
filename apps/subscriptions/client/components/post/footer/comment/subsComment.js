@@ -5,7 +5,7 @@ if (Meteor.isClient) {
       var currentUser = Meteor.userId(); // For editing only
       var currentPost = this._id;
 
-      return CommentsCollection.find({postId: currentPost}, {sort: {createdAt: -1}});
+      return CommentsCollection.find({postId: currentPost});
     }
   });
 
@@ -19,20 +19,12 @@ if (Meteor.isClient) {
 
       if (e.which == 13) {
         if (commentText != '') {
-          CommentsCollection.insert({
-            comment: commentText,
-            postId: currentPost,
-            createdAt: commentTime,
-            createdBy: currentUser,
-            updatedAt: false,
-            updatedBy: false
-          });
-
+          Meteor.call('subsComment', commentText, currentPost, commentTime, currentUser);
           $('[name="post-comment"]')
             .val('')
             .blur();
         }
       }
     }
-  })
+  });
 }

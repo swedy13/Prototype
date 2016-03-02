@@ -8,14 +8,7 @@ if (Meteor.isClient) {
       var currentUser = Meteor.userId();
 
       if (postContent != '') {
-        PostsCollection.insert({
-          content: postContent,
-          createdAt: postTime,
-          createdBy: currentUser,
-          updatedAt: false,
-          updatedBy: false
-        });
-
+        Meteor.call('subsPost', postContent, postTime, currentUser);
         $('[name="postContent"]').val('');
         $('#subs-editor').delay(300).slideUp(200);
         $('.controls').find('.post').removeClass('active');

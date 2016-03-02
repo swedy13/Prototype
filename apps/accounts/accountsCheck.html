@@ -1,11 +1,30 @@
 <template name="accountsCheck">
 
   <ul class="vertical">
+    <li><h3>Meteor</h3></li>
     <li>Meteor ID: {{currentUser._id}}</li>
     <li>UserName: {{currentUser.profile.name}}</li>
+    {{#each currentUser.emails}}
+      {{address}}
+    {{/each}}
+    
+    <hr/>
+    
+    <button data-action="fbPic" class="blue"></button>    
+    <li><h3>Facebook</h3></li>
+    {{#each profPics}}
+    <li><img class="large bordered avatar" src="{{fbPic}}" alt="Facebook Profile Image"/></li>
+    {{/each}}    
+    <li>Facebook ID: {{currentUser.services.facebook.id}}</li>
+    <li>Facebook Name: {{currentUser.services.facebook.name}}</li>
+    <li>Facebook Email: {{currentUser.services.facebook.email}}</li>
+    
+    <hr/>
+    
+    <li><h3>Twitter</h3></li>
+    <li><img class="large bordered avatar" src="{{currentUser.services.twitter.profile_image_url}}" alt="Twitter Profile Image"/></li>
     <li>Twitter ID: {{currentUser.services.twitter.id}}</li>
     <li>Twitter Name: {{currentUser.services.twitter.screenName}}</li>
-    <li><img alt="Twitter Profile Image" src="{{currentUser.services.twitter.profile_image_url}}"/></li>
   </ul>
   
 </template>
