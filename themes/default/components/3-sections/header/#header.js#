@@ -3,8 +3,7 @@ if (Meteor.isClient) {
   Template.header.events({
     'click [data-action="toggleUserMenu"]': function(event) {
       if ($('.usermenu').css('display') == 'none') {
-        $('.usermenu').slideDown(25).focus();
-        /* $('.usermenu').focus(); */
+        $('.usermenu').slideDown(25).css('display', 'flex');
       }
       else {
         $('.usermenu').slideUp(25);
@@ -12,22 +11,15 @@ if (Meteor.isClient) {
     }
   });
 
-  /* Template.body.events({
-     // Close the user menu when clicking outside the menu button
-     'click': function(event) {
-     if ($('.usermenu').hasClass('open')) {
-     $('.usermenu').slideUp(25).removeClass('open');
-     }
-     }
-     }); */
+  Template.body.events({
+    // Close the user menu when clicking outside the menu button
+    'click': function(event) {
+      if ($('.usermenu').hasClass('open')) {
+      }
+    }
+  });
   
 	Template.grid.onRendered(function() {
-    (function closeUserMenu() {
-      $('.usermenu').focusout(function() {
-        $('.usermenu').slideUp(25);
-      });
-    })();
-    
 		// The 'grid' template allows this function to work when
 		// a user hovers over the main content area
 		(function toggleHeader() {

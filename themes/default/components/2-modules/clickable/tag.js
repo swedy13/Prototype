@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
 
-  Template.subsFilters.events({
+  Template.SubscriptionsFilters.events({
     'click [data-action="toggle-tag"]': function(e) {
       var $this = $(e.target);
 

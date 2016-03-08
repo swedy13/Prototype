@@ -1,0 +1,114 @@
+<template name="SubscriptionsFilters">
+	<ul id="subscriptions-filters" class="vertical right filters">
+
+		<li class="by-type">
+			<p class="title">TYPE</p>
+			<div>
+				<button class="full left bordered ghost lightest-bg recent tags" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-clock-o"></i>
+					</span>
+					<p>Newest</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg popular tags" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-rocket"></i>
+					</span>
+					<p>Popular</p>
+				</button>
+			</div>
+		</li>
+
+		<li class="by-content">
+			<p class="title">CONTENT</p>
+			<div>
+				<button class="full left bordered ghost lightest-bg tags text" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-file-text-o"></i>
+					</span>
+					<p>Text</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg tags image" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-picture-o"></i>
+					</span>
+					<p>Images</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg tags gif" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-file-video-o"></i>
+					</span>
+					<p>Gifs</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg tags video" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-film"></i>
+					</span>
+					<p>Videos</p>
+				</button>
+			</div>
+		</li>
+
+		<li class="by-location">
+			<p class="title">LOCATION</p>
+			<div>
+				<button class="full left bordered ghost lightest-bg tags map-marker" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-map-marker"></i>
+					</span>
+					<p>My Location</p>
+				</button>
+
+				<div class="tag-toggle" data-action="swap-contents">
+					<div class="top">
+						<button class="full left bordered ghost lightest-bg tags search" data-action="toggle-tag">
+							<span>
+								<i class="fa fa-search"></i>
+							</span>
+							<p>Search</p>
+						</button>
+					</div>
+					<div class="bottom">
+						<div class="left icon tags input-group">
+							<span>
+								<i class="fa fa-search"></i>
+							</span>
+							<input name="find-location" type="text" placeholder="Try a zip..."/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li class="by-source">
+			<p class="title">SOURCE</p>
+			<div>
+				<button class="full left bordered ghost lightest-bg tags facebook" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-facebook"></i>
+					</span>
+					<p>Facebook</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg tags twitter" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-twitter"></i>
+					</span>
+					<p>Twitter</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg tags clock-o" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-clock-o"></i>
+					</span>
+					<p>Mythros</p>
+				</button>
+				<button class="full left bordered ghost lightest-bg tags reddit" data-action="toggle-tag">
+					<span>
+						<i class="fa fa-reddit-alien"></i>
+					</span>
+					<p>Reddit</p>
+				</button>
+			</div>
+		</li>
+		
+	</ul>
+</template>

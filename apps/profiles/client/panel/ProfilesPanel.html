@@ -1,0 +1,24 @@
+<template name="ProfilesPanel">
+	<div class="profile panel active">
+		<div class="header">
+			<ul class="full center horizontal">
+				<li>
+					<a class="feed icon tab">
+						<i class="fa fa-picture-o"></i>
+						<p class="title">Bio</p>
+					</a>
+				</li>
+				<li>
+					<a class="settings icon tab active">
+						<i class="fa fa-cog"></i>
+						<p class="title">Settings</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="content">
+			{{> ProfilesSettings}}      
+		</div>
+	</div>	
+</template>

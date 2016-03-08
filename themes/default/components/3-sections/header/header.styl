@@ -1,3 +1,5 @@
+@import 'themes/default/colors.import.styl'
+
 // ---- HEADER STYLES ---- //
 // Site Header
 header
@@ -26,6 +28,52 @@ header
       margin 3px 0 0 2px
       border 2px solid gold
       filter drop-shadow(0 0 5px yellow)
+
+  .user
+    display flex
+    position absolute
+    top 0
+    right 0
+    height 30px
+
+  .usermenu
+    display none
+    flex-direction column
+    position absolute
+    top 33px
+    right 0px
+    width 115px
+    background-color white
+    outline none
+    border 1px solid light-gray
+    border-bottom-left-radius 3px
+    box-shadow z2
+
+    hr
+      align-self center
+      width 85%
+      margin 0px
+      border 1px solid lightest-gray
+
+    ul
+      display flex
+      flex-direction column
+
+      li
+        padding 4px 12px
+        border 1px dotted transparent
+        border-left none
+        border-right none
+        color #666
+        cursor pointer
+
+        &:hover
+          background-color lightest-gray
+          border-color light-gray
+          color darker-text
+
+        p
+          margin-left -5px
 
       
 // Section Header

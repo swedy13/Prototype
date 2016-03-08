@@ -1,0 +1,37 @@
+<template name="SubscriptionsInteractions">
+  <div class="subs-interaction">
+    <ul class="horizontal space-4x left">
+
+		  <li>
+        <span class="thick inline dark-gray blue-bg icon comment" data-action="toggleCommentEditor">
+			    <i class="fa fa-commenting"></i>
+			    <p>Comment</p>
+        </span>
+		  </li>
+      
+		  <li>
+        <span class="thick baseline dark-gray blue-bg icon like {{hasLiked}}" data-action="toggleLike">
+          {{> likeCount}}
+          <i class="fa fa-thumbs-o-up largest dark-gray blue-bg toggle"></i>
+          {{#if hasLiked}}
+          <p>Unlike</p>
+          {{else}}
+			    <p>Like</p>
+          {{/if}}
+        </span>
+		  </li>
+      
+		  <li>
+        <span class="thick inline dark-gray blue-bg icon share" data-action="toggle-icon">
+			    <i class="fa fa-share-alt largest dark-gray blue-bg toggle"></i>
+			    <p>Share</p>
+        </span>
+		  </li>
+	  </ul>
+  </div>
+</template>
+
+
+<template name="likeCount">
+  {{like}}
+</template>

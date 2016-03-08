@@ -1,0 +1,39 @@
+<template name="UserMenu">
+
+  <div class="usermenu" tabindex="0">
+    <ul>
+      <li data-action="openSettings">
+        <span class="inline">
+          <span>
+            <i class="fa fa-gear fa-fw"></i>
+          </span>
+          <p>Settings</p>
+        </span>
+      </li>
+      
+      <li data-action="openPrivacy">
+        <span class="inline">
+          <span>
+            <i class="fa fa-lock fa-fw"></i>
+          </span>
+          <p>Privacy</p>
+        </span>
+      </li>
+      
+      <li data-action="openHelp">
+        <span class="inline">
+          <span>
+            <i class="fa fa-question fa-fw"></i>
+          </span>
+          <p>Help</p>
+        </span>
+      </li>
+      
+      <hr/>
+
+      {{> AccountsLogout}}
+      
+    </ul>
+  </div>
+  
+</template>

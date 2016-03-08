@@ -72,6 +72,9 @@ p, a, span
 
 // ---- FONT COLORS ---- //
 p, a, span
+  &.white
+    color white
+    
   &.light
     color light-text
 
@@ -83,3 +86,24 @@ p, a, span
 
   &.red
     color dark-red
+
+
+// ---- FONT STYLES ---- //
+h1, h2, h3, h4, p, a
+  &.single
+    &.spaced
+      line-height 1.5
+
+    &.margin
+      margin-bottom 5px
+    
+  &.double
+    &.spaced
+      line-height 1.5
+
+    &.margin
+      margin-bottom 10px
+
+  &.triple
+    &.margin
+      margin-bottom 15px

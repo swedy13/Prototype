@@ -2,11 +2,24 @@
 
 // ---- SOCIAL MEDIA BUTTONS ---- //
 button
-  &.ghost, &.light-gray
 
     // ---- SOCIAL STYLES ---- //
+  &.ghost
     &.facebook, &.google, &.reddit, &.twitter
+      background-color transparent
+      color dark-text
     
+  &.light-gray
+    &.facebook, &.google, &.reddit, &.twitter
+      background-color lightest-gray
+      color dark-text
+
+  &.ghost, &.light-gray
+    &.facebook, &.google, &.reddit, &.twitter
+
+      i
+        margin 1px 0 0 1px
+
       // Default Style
       &:hover, &.active
         color lightest-text
@@ -67,3 +80,37 @@ button
           &.active
             span
               background-color twitter
+
+
+  // ---- SOCIAL COLORS ---- //
+  // Facebook
+  &.facebook
+    background-color facebook
+    color white
+    
+    &:hover, &.active
+      background-color dark-facebook
+
+  // Google
+  &.google
+    background-color google
+    color white
+    
+    &:hover, &.active
+      background-color dark-google
+                      
+  // Reddit
+  &.reddit
+    background-color reddit
+    color white
+    
+    &:hover, &.active
+      background-color dark-reddit
+            
+  // Twitter
+  &.twitter
+    background-color twitter
+    color white
+    
+    &:hover, &.active
+      background-color dark-twitter

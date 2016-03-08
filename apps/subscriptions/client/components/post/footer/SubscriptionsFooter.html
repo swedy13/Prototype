@@ -1,0 +1,14 @@
+<template name="SubscriptionsFooter">
+
+  {{> SubscriptionsInteractions}}
+
+  <div class="subs-comments">
+    <ul class="vertical tight">
+      {{#each comment}}
+      {{> SubscriptionsComment}}
+      {{/each}}
+    </ul>
+    {{> SubscriptionsCommentEditor}}
+  </div>
+  
+</template>

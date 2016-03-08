@@ -1,0 +1,45 @@
+<template name="SubscriptionsSidebar">
+	<div class="sb-panel">
+
+		<ul class="header">
+			<li class="icon">
+				<img class="activity" alt="" src=""/>
+			</li>
+			<li class="icon">
+				<img class="integrations" alt="" src=""/>
+			</li>
+			<li class="icon">
+				<img class="settings" alt="" src=""/>
+			</li>
+		</ul>
+
+		<div class="content">
+			{{> SubscriptionsSidebarActivity}}
+			{{> SubscriptionsSidebarIntegrations}}
+			{{> SubscriptionsSidebarSettings}}
+		</div>
+		
+	</div>	
+</template>
+
+
+<!-- Activity Notifications -->
+<template name="SubscriptionsSidebarActivity">
+	<div class="activity"></div>
+</template>
+
+
+<!-- API Integrations -->
+<template name="SubscriptionsSidebarIntegrations">
+	<div class="integrations"></div>
+	<!-- Integrations -->
+</template>
+
+
+<!-- Subscriptions Settings -->
+<template name="SubscriptionsSidebarSettings">
+	<div class="settings"></div>
+	<!-- Privacy Settings
+			 Blocked Users
+			 View As -->
+</template>

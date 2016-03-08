@@ -1,0 +1,73 @@
+<template name="SubscriptionsEditor">
+	<div id="subs-editor" class="paper dark border editor">
+		<div class="content right">
+			
+			<textarea name="postContent" type="text" placeholder="What's new today?"></textarea>
+			
+			<div class="sidebar">
+				<ul class="vertical icon">
+					<li>
+						<button class="large toggle circles ghost light-gray bordered green-sliver" data-action="toggle-button">
+							<i class="fa fa-camera fa-fw"></i>
+							<!-- <p class="right">Add an image</p> -->
+						</button>
+					</li>
+					<li>
+						<button class="large toggle circles ghost light-gray bordered blue-sliver" data-action="toggle-button">
+							<i class="fa fa-link fa-fw"></i>
+							<!-- <p class="right">Add a link</p> -->
+						</button>
+					</li>
+					<li>
+						<button class="large toggle circles ghost light-gray bordered red-sliver" data-action="toggle-button">
+							<i class="fa fa-map-marker fa-fw"></i>
+							<!-- <p class="right">Add a location</p> -->
+						</button>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="light-gray footer">
+			
+			<ul class="horizontal left">
+				<li>
+					<button class="toggle ghost circles facebook sliver" data-action="toggle-button">
+						<i class="fa fa-facebook fa-fw"></i>
+						<!-- <p class="top">Post to Facebook</p> -->
+					</button>
+				</li>
+				<li>
+					<button class="toggle ghost circles twitter sliver" data-action="toggle-button">
+						<i class="fa fa-twitter fa-fw"></i>
+						<!-- <p class="top">Post to Twitter</p> -->
+					</button>
+				</li>
+				<li>
+					<button class="toggle ghost circles reddit sliver" data-action="toggle-button">
+						<i class="fa fa-reddit-alien fa-fw"></i>
+						<!-- <p class="top">Post to Reddit</p> -->
+					</button>
+				</li>
+			</ul>
+      
+			<div class="publish">
+				<ul class="horizontal right">
+					<li>
+						<button class="ghost sliver toggle circles privacy" data-action="toggle-button">
+							<i class="fa fa-lock"></i>
+							<!-- <p class="top">Privacy Settings</p> -->
+						</button>
+					</li>
+					<li>
+						<button class="blue post" data-action="publish-content">
+							<i class="fa fa-paper-plane"></i>
+							<p class="top">Post</p>
+						</button>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</template>

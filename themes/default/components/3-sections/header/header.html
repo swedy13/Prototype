@@ -1,5 +1,33 @@
 <template name="header">
 	<div class="background">
+    
 		<img id="logo" class="logo" src="/img/logos/mythros.png"/>
+    
+    {{#if currentUser}}
+    <div class="user">
+      <span class="inline">
+        
+        <img class="small avatar" src="https://supportforums.cisco.com/sites/default/files/default_images/default-avatar.png"/>
+        
+        {{#if currentUser.profile.name}}
+        <!-- something -->
+        
+        {{else}}
+          {{#if currentUser.username}}
+        <!-- something else -->
+        
+          {{else}}
+            <p class="white">{{currentUser.emails.[0].address}}</p>
+          {{/if}}
+        {{/if}}  
+        
+            <span class="white icon" data-action="toggleUserMenu"><i class="fa fa-caret-down fa-fw"></i></span>
+      </span>
+    </div>
+    {{/if}}
+    
 	</div>
+
+  {{> UserMenu}}
+  
 </template>

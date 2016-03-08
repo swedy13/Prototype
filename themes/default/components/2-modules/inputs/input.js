@@ -14,7 +14,7 @@ if (Meteor.isClient) {
 		});
 	});
 
-	Template.subsEditor.onRendered(function() {
+	Template.SubscriptionsEditor.onRendered(function() {
 		$('.editor').find('textarea').autosize();
 	});
 }

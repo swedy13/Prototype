@@ -53,21 +53,4 @@ if (Meteor.isClient) {
 			});
 		})();
 	});
-
-
-	// HELPERS
-	// Posts Helpers
-	Template.grid.helpers({
-	});
-
-
-	// EVENTS	
-	// Posts Events
-	Template.grid.events({
-	});
-
-
-	// METHODS
-	Meteor.methods({
-	});
 }

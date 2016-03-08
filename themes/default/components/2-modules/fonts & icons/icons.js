@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
 
-  Template.subsFooter.helpers({
+  Template.SubscriptionsFooter.helpers({
     'toggle-comment': function() {
       
     }
