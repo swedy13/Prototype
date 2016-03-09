@@ -10,7 +10,7 @@ if (Meteor.isClient) {
       // some action
     },
 
-    'click [data-action="toggleFilters"]': function() {
+    'click .filter': function() {
       $('#subscriptions-filters').css('display', 'flex').toggleClass('slideLeft');
     }
   });
