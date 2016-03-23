@@ -33,6 +33,10 @@ underscore
 # copleykj:jquery-autosize
 
 
+# API
+http
+
+
 # UI
 mquandalle:stylus
 fortawesome:fontawesome
@@ -42,4 +46,5 @@ fortawesome:fontawesome
 copleykj:jquery-autosize
 copleykj:livestamp
 # zimme:collection-timestampable
-http
+random
+reactive-var

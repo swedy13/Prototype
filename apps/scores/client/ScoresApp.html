@@ -1,0 +1,61 @@
+<template name="ScoresApp">
+  <section class="scores">
+
+    <button class="blue raised">Button</button>
+
+    <div class="header">
+      <div class="main icon">
+        <i class="fa fa-trophy"></i>
+      </div>
+      <div class="title up">
+        <h2>Scores</h2>
+      </div>
+    </div>
+
+    <div class="dark border paper tight">
+      <div class="card">
+
+        <div class="header">
+          Menu & Filters
+        </div>
+        
+        <div class="top-scores">
+          <ul class="vertical list">
+            {{#if currentUser}}
+    		      {{#each getStats}}
+          	    {{> Champion}}
+              {{/each}}
+            {{/if}}
+          </ul>
+        </div>
+
+        <div class="my-scores">
+          <div class="graph"></div>
+          
+        </div>
+
+        <div class="footer">
+          <ul class="horizontal">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+  </section>
+</template>
+
+
+<template name="Champion">
+  <li>
+    <span class="inline">
+      <img alt="" src=""/>
+      <p>{{championId}}</p>
+    </span>
+  </li>
+</template>
