@@ -20,11 +20,13 @@
         </div>
         
         <div class="top-scores">
-          <ul class="vertical list">
+          <ul class="vertical kda list">
             {{#if currentUser}}
     		      {{#each getStats}}
-          	    {{> Champion}}
+          	    {{> KDA}}
               {{/each}}
+            {{else}}
+            <p>You are not logged in</p>
             {{/if}}
           </ul>
         </div>
@@ -48,14 +50,4 @@
     </div>
     
   </section>
-</template>
-
-
-<template name="Champion">
-  <li>
-    <span class="inline">
-      <img alt="" src=""/>
-      <p>{{championId}}</p>
-    </span>
-  </li>
 </template>

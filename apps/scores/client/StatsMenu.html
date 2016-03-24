@@ -1,0 +1,102 @@
+<template name="StatsMenu">
+
+  <div class="statsmenu" tabindex="0">
+    <ul>
+
+      <li>Kills</li>
+      <li>Assists</li>
+      <li>Deaths</li>
+      <li>KDA</li>
+      <li>CS</li>
+      <li>GPM</li>
+      <li>Damage</li>
+      <li>Tanking</li>
+      <li>Healing</li>
+      <li>CC</li>
+      
+    </ul>
+  </div>
+  
+</template>
+
+<template name="Kills">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.championsKilled}}</p>
+  </span>
+</template>
+
+<template name="Assists">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.assists}}</p>
+  </span>
+</template>
+
+<template name="Deaths">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.numDeaths}}</p>
+  </span>
+</template>
+
+<template name="KDA">
+  <li>
+    <span class="inline">
+      <img alt="" src=""/>
+      <p class="kills">{{stats.championsKilled}}</p>
+      <p class="assists">{{stats.assists}}</p>
+      <p class="deaths">{{stats.numDeaths}}</p>
+    </span>
+  </li>
+</template>
+
+<template name="CS">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.minionsKilled}}</p>
+  </span>
+</template>
+
+<template name="GPM">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.goldEarned}} / {{stats.timePlayed}}</p>
+  </span>
+</template>
+
+<template name="Damage">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.totalDamageDealtToChampions}}</p>
+  </span>
+</template>
+
+<template name="Tanking">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.totalDamageTaken}}</p>
+  </span>
+</template>
+
+<template name="Healing">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p></p>
+  </span>
+  {{totalHeal}}
+</template>
+
+<template name="CC">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{stats.totalTimeCrowdControlDealt}}</p>
+  </span>
+</template>
+
+<template name="Champions">
+  <span class="inline">
+    <img alt="" src=""/>
+    <p>{{championId}}</p>
+  </span>
+</template>

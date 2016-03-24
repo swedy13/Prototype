@@ -21,7 +21,6 @@ Meteor.methods({
         // Win Rate
         var win;
         if (stats.win) { win = 1; } else { win = 0;}
-        console.log(win);
         // KDA
         var kills = stats.championsKilled;
         var assists = stats.assists;
